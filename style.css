@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+          box-sizing: border-box;
+}
+
+* {
+          margin: 0;
+          padding: 0;
+}
+@font-face {
+          font-family: 'Futura';
+          src: url('/resources/fonts/FUTURA55REGULAR.TTF') format('truetype');
+}
+
+
+:root {
+          --fontFamily: 'Futura', sans-serif;
+          --fontFamilyNegrita: 'Futura', sans-serif;
+          --tamanio-h2: 60px;
+          --tamanio-h3: 40px;
+          --tamanio-p: 20px;
+}
+
+.Brand {
+          font-family: "Playfair Display SC", serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 40px;
+}
+
+.title {
+          font-family: "Playfair Display SC", serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 32px;
+}
+
+.subtitle{
+          font-family: "Playfair Display SC", serif;
+          font-weight: 400;
+          font-style: bold;
+          font-size: 20px;
+}
+
+.subtitle2{
+          font-family: "Playfair Display SC", serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 20px;
+}
+
+.small-text{
+          font-family: "Futura", serif;
+          font-weight: 300;
+          font-style: normal;
+          font-size: 15px;
+}
+
+.small-text2{
+          font-family: "Playfair Display SC", serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 10px;
+          color: rgba(255, 255, 255, 0.9);
+}
+
+.underline{
+          text-decoration: underline;
+}
+
+hr {
+          border: 0;
+          height: 1px;
+          background: #00000020;
+}
+
+.copy {
+          margin-left: 40px;
+          margin-bottom: 30px;
+}
+
+/* NAV */
+
+nav{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          height: 85px;
+          padding-left: 4%;
+          padding-right: 4%;
+}
+
+.nav-left{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          width: 150px;
+}
+
+#menu-desp{
+          height: 100%;
+          width: 620px;
+          background-color: #D9D9D9;
+          position: fixed;
+          top: 0;
+          left: -1000px;
+}
+
+#burgerNav{
+          margin-top: 5px;
+          z-index: 30;
+}
+
+.rect{
+          margin-bottom: 4px;
+          width: 22px;
+          height: 3px;
+          background-color: black;
+          position: relative;
+}
+
+#menu-text1{
+          position: relative;
+          margin-left: 20px;
+          z-index: 30;
+}
+
+.search{
+          display: flex;
+          flex-direction: row;
+}
+.mgn-glass{
+          margin-left: 70px;
+          margin-right: 20px;
+}
+
+.nav-right{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          width: 150px;
+}
+
+@keyframes openMenu {
+          from { left: -300px; opacity: 0; }
+          to { left: 0px; opacity: 1; }
+}
+
+@keyframes closeMenu {
+          from { left: 0px; opacity: 1; }
+          to { left: -300px; opacity: 0; }
+}
+
+@keyframes rote1 {
+          from {rotate: 0deg; top: 0px;}
+          to{rotate: 45deg; top: 7px;}
+}
+@keyframes rote2 {
+          from {rotate: 0deg;}
+          to{rotate: 135deg;}
+}
+@keyframes rote3 {
+          from {rotate: 0deg;top: 0px;}
+          to{rotate: 135deg;top:-7px;}
+}
+@keyframes unrote1 {
+          from{rotate: 45deg; top: 7px;}
+          to{rotate: 0deg; top: 0px;}
+}
+@keyframes unrote2 {
+          from{rotate: 135deg;}
+          to{rotate: 0deg;}
+}
+@keyframes unrota3 {
+          from{rotate: 135deg;top: 0px;}
+          to{rotate: 0deg;top: -7px;}
+}
+
+/* HERO */
+
+#hero{
+          height: 730px;
+          overflow: hidden;
+          background-image: url(resources/media/HERO.png);
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: end;
+          width: 100%;
+}
+
+.mid-hero{
+          margin-top: 15px;
+          margin-bottom: 35px
+}
+.down-hero{
+          margin-bottom: 35px
+}
+
+#blanco{
+          height: 700px;
+          width: 100%;
+}
+
+
+
+
+
+
+
+
+/* BODY */
+
+#shopping{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ShopTEXT{
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+
+.categorie-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#categories-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.categorie-card{
+    display: flex;
+    height: 1100px;
+    width: 920px;
+}
+
+.card-content{
+    color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.card-title{
+    margin-bottom: 55px;
+}
+
+.card-img{
+    position: absolute;
+}
+
+.card-button{
+    width: 470px;
+    height: 75px;
+    color: white;
+    background-color: rgba(217, 217, 217, 0.2);
+    border: none;
+}
+
+
+
+/* FOOTER */
+
+#footer-up{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin-top: 60px;
+          margin-bottom: 45px;
+          margin-right: 5%;
+          margin-left: 5%;
+}
+#footer-up p{
+          margin-top: 30px;
+}
+#footer-help{
+          max-width: 360px;
+}
+#footer-help p, h3{
+          max-width: fit-content;
+}
+
+#footer-span{
+          max-width: fit-content;
+}
+
+.footer-txt{
+          margin-bottom: 30px;
+}
+
+#footer-down{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 140px;
+}
